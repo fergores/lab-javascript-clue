@@ -207,3 +207,97 @@ function mistery (aleatorioCharacters,aleatorioRoom,aleatorioWeapons){
     console.log( charactersArray[aleatorioCharacters].first_name , charactersArray[aleatorioCharacters].last_name,'ha matadado a Mr.Boddy usando',weaponsArray[aleatorioWeapons].name,'en',roomsArray[aleatorioRoom].name);
 
 }
+
+
+
+var citites = ['miami', 'barcelona', 'madrid'];
+
+var newArray= citites.map(function(citiy){
+
+         return citiy.charAt(0).toUpperCase() + citiy.slice(1);
+})
+
+console.log (newArray);
+
+
+var students = [
+    {
+        name: "Tony Parker",
+        firstProject: 80,
+        secondProject: 75,
+        finalExam: 90
+    },
+    {
+        name: "Marc Barchini",
+        firstProject: 84,
+        secondProject: 65,
+        finalExam: 65
+    },
+    {
+        name: "Claudia Lopez",
+        firstProject: 45,
+        secondProject: 95,
+        finalExam: 99
+    },
+    {
+        name: "Alvaro Briattore",
+        firstProject: 82,
+        secondProject: 92,
+        finalExam: 70
+    },
+    {
+        name: "Isabel Ortega",
+        firstProject: 90,
+        secondProject: 32,
+        finalExam: 85
+    },
+    {
+        name: "Francisco Martinez",
+        firstProject: 90,
+        secondProject: 55,
+        finalExam: 78
+    },
+    {
+        name: "Jorge Carrillo",
+        firstProject: 83,
+        secondProject: 77,
+        finalExam: 90
+    },
+    {
+        name: "Miguel López",
+        firstProject: 80,
+        secondProject: 75,
+        finalExam: 75
+    },
+    {
+        name: "Carolina Perez",
+        firstProject: 85,
+        secondProject: 72,
+        finalExam: 67
+    },
+    {
+        name: "Ruben Pardo",
+        firstProject: 89,
+        secondProject: 72,
+        finalExam: 65
+    }
+];
+
+
+var newArrayStudents = students.map(function(array){
+    
+   
+    
+    
+     object = {
+
+        name : array.name,
+
+        finalNote : (array.finalExam * 0.6)+ (((array.firstProject+array.secondProject)/2)*0,4),
+    
+    }
+
+    return object;
+})
+
+console.log(newArrayStudents);
